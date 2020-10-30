@@ -32,4 +32,4 @@ Pi Relay V2 is developed by SB Components with the potential to control 4 applia
 1. Press Start button >> Preferences >> Raspberry Pi Configuration, Then click on Interfaces Tab and make sure 1-Wire is disabled. 
 2. Click on OK button then reboot Raspberry pi.
 
-<img src="https://github.com/sbcshop/PiRelay-V2/blob/master/Images/Relay4Fix.PNG"/>
+<img src="https://github.com/sbcshop/PiRelay-V2/blob/main/Images/Relay4Fix.PNG"/>
