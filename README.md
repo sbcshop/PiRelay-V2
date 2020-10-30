@@ -11,3 +11,25 @@ Pi Relay V2 is developed by SB Components with the potential to control 4 applia
 * LED working status indicators for each Relay.
 * High-quality Relays.
 * Pin Stacking Header for accessing GPIO of RPi.
+
+
+**Steps for PiRelay software installation -**
+
+1. Open Terminal and clone/download the repository by typing below command in terminal: 
+
+   ```
+   git clone https://github.com/sbcshop/PiRelay-V2
+   
+   ```
+   
+2. Your code will be downloaded to '/home/pi' directory. Use 'ls' command to check the list of directories
+
+3. 'test.py' is example code for PiRelay-V2. Run test file and play with PiRelay
+
+
+### GPIO 4 Relay Not working Fix
+
+1. Press Start button >> Preferences >> Raspberry Pi Configuration, Then click on Interfaces Tab and make sure 1-Wire is disabled. 
+2. Click on OK button then reboot Raspberry pi.
+
+<img src="https://github.com/sbcshop/PiRelay-V2/blob/master/Images/Relay4Fix.PNG"/>
