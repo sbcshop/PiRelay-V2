@@ -12,6 +12,14 @@ Pi Relay V2 is developed by SB Components with the potential to control 4 applia
 * High-quality Relays.
 * Pin Stacking Header for accessing GPIO of RPi.
 
+### PinOut
+
+| Relays   | BOARD |    BCM     |
+| -------  | ----- | -----------|
+| Relay 1  |  35   |   GPIO 19  |
+| Relay 2  |  33   |   GPIO 13  |
+| Relay 3  |  31   |   GPIO 6  |
+| Relay 4  |  29   |   GPIO 5   |
 
 **Steps for PiRelay software installation -**
 
