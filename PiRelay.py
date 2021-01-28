@@ -1,17 +1,19 @@
 #!/usr/bin/python
 
-# Library for PiRelay V2
+# Library for PiRelay
 # Developed by: SB Components
-# Author: Satyam
-# Project: PiRelay-V2
-# Python: 3.7.3
+# Author: Ankur,JKarthaus
+# Project: PiRelay
+# Python: 3.4.2
+try:
+    import RPi.GPIO as GPIO
+except RuntimeError:
+    print("Error importing RPi.GPIO!  This is probably because you need superuser privileges.  You can achieve this by using 'sudo' to run your script")
 
-
-import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BOARD)
-GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(True)
 
 class Relay:
     ''' Class to handle Relay
@@ -19,11 +21,11 @@ class Relay:
     Arguments:
     relay = string Relay label (i.e. "RELAY1","RELAY2","RELAY3","RELAY4")
     '''
-    relaypins = {"RELAY1":35, "RELAY2":33, "RELAY3":31, "RELAY4":29}
+    relayGpio = {"RELAY1":19, "RELAY2":13, "RELAY3":6, "RELAY4":5}
 
 
     def __init__(self, relay):
-        self.pin = self.relaypins[relay]
+        self.pin = self.relayGpio[relay]
         self.relay = relay
         GPIO.setup(self.pin,GPIO.OUT)
         GPIO.output(self.pin, GPIO.LOW)
