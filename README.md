@@ -5,7 +5,7 @@ PiRelay-V2 is developed by SB Components with the potential to control 4 applian
 
 ### Specification of PiRelay-V2 for Raspberry Pi
 
-* High-quality Relay and loads up to 240VAC/7A, 125VDC/10A.
+* High-quality Relay and loads up to 250VAC/7A, 30VDC/10A.
 * Optocoupler 
 * Standardized shield shape and design.
 * LED working status indicators for each Relay.
